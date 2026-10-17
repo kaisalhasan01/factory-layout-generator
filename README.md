@@ -11,6 +11,9 @@ compiled but not yet run against CATIA.
 > The idea comes from a course assignment in **TMKT57 — Product Modelling** (Linköping
 > University): a CATIA form that could place machines but never finished the conveyor. This
 > version is rebuilt from the ground up, and all of its code and models are new.
+>
+> Built with AI pair-programming (Claude). The problem framing, requirements, testing and
+> evaluation are my own.
 
 ![The workflow, from an empty floor to a running line](docs/images/demo_workflow.gif)
 

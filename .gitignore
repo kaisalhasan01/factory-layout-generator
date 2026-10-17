@@ -25,3 +25,6 @@ logs/
 # Unity editor crash recovery
 unity/Assets/_Recovery/
 unity/Assets/_Recovery.meta
+
+# Local working notes for AI assistants (kept on disk, not published)
+CLAUDE.md
