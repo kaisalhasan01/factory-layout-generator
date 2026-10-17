@@ -1,0 +1,27 @@
+# .NET
+bin/
+obj/
+.vs/
+*.user
+TestResults/
+
+# Unity
+unity/[Ll]ibrary/
+unity/[Tt]emp/
+unity/[Oo]bj/
+unity/[Ll]ogs/
+unity/[Uu]ser[Ss]ettings/
+unity/*.csproj
+unity/*.sln
+unity/.vs/
+
+# Builds and local logs
+Build/
+logs/
+
+# CATIA output is made at LiU, not committed
+*.CATPart.bak
+
+# Unity editor crash recovery
+unity/Assets/_Recovery/
+unity/Assets/_Recovery.meta

@@ -1,0 +1,26 @@
+{
+  "format": "factory-layout/1",
+  "name": "machining-cell",
+  "width": 22,
+  "height": 13,
+  "cellMm": 500,
+  "voids": [[0, 0], [1, 0], [2, 0], [0, 1], [1, 1], [2, 1],
+            [16, 9], [17, 9], [18, 9], [19, 9], [20, 9], [21, 9],
+            [16, 10], [17, 10], [18, 10], [19, 10], [20, 10], [21, 10],
+            [16, 11], [17, 11], [18, 11], [19, 11], [20, 11], [21, 11],
+            [16, 12], [17, 12], [18, 12], [19, 12], [20, 12], [21, 12]],
+  "components": [
+    { "id": "IN", "kind": "Start", "x": 0, "y": 6, "facing": "East" },
+    { "id": "OUT", "kind": "Stop", "x": 21, "y": 7, "facing": "East" },
+    { "id": "P1", "kind": "Pillar", "x": 6, "y": 6, "facing": "East" },
+    { "id": "P2", "kind": "Pillar", "x": 12, "y": 6, "facing": "East" },
+    { "id": "P3", "kind": "Pillar", "x": 18, "y": 0, "facing": "East" },
+    { "id": "M1", "kind": "Machine", "x": 4, "y": 12, "facing": "South", "length": 3, "width": 3, "label": "CNC mill", "colour": "#3D6E9E" },
+    { "id": "R1", "kind": "Robot", "x": 8, "y": 9, "facing": "South" },
+    { "id": "D1", "kind": "Drill", "x": 12, "y": 12, "facing": "South" },
+    { "id": "R2", "kind": "Robot", "x": 10, "y": 3, "facing": "North" },
+    { "id": "M2", "kind": "Machine", "x": 15, "y": 1, "facing": "North", "length": 2, "width": 2, "label": "Lathe", "colour": "#B5523B" },
+    { "id": "X1", "kind": "XRay", "x": 19, "y": 4, "facing": "North" }
+  ],
+  "conveyorMode": "Auto"
+}

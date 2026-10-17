@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- netstandard2.0 so one DLL loads in Unity, in .NET Framework 4.8 (the CATIA builder) and in .NET 9. -->
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <RootNamespace>FactoryLayout.Core</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>CS1591</NoWarn>
+  </PropertyGroup>
+
+  <!-- Unity loads the engine as a precompiled plugin; keep its copy in step with every build. -->
+  <Target Name="CopyToUnity" AfterTargets="Build" Condition="Exists('$(MSBuildThisFileDirectory)..\..\unity\Assets')">
+    <MakeDir Directories="$(MSBuildThisFileDirectory)..\..\unity\Assets\Plugins" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(MSBuildThisFileDirectory)..\..\unity\Assets\Plugins" SkipUnchangedFiles="true" />
+  </Target>
+</Project>
